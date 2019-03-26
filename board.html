@@ -30,6 +30,7 @@
 
 		<h2>Departures</h2>
 		<table id="departures" border="1"></table>
+		<div>Last Updated: <span id="lastUpdate"></span></div>
 	
 	</div>
 
@@ -37,6 +38,7 @@
 
 	<script>
 	var url = "stations.php";
+	var j = 0;
 	function loadDoc() {
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
@@ -54,13 +56,14 @@
 	  var xmlDoc = xml.responseXML;
 	  var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th><th>Actual arrival</th></tr>";
   	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th><th>Actual departure</th></tr>";
-	  if(xmlDoc.getElementsByTagName("ServiceData") == null || typeof(xmlDoc.getElementsByTagName("ServiceData") === "undefined")) {
-		  var x = xmlDoc.getElementsByTagName("ServiceData");
-	  } else {
-		  //loadDoc();
-		  alert("Problem loading data from source.");
-		  loadDoc();
-		  return 1;
+	  try {
+	 	 var x = xmlDoc.getElementsByTagName("ServiceData");
+	  } catch(err) {
+		  console.log("Error loading data source");
+		  document.getElementById("stationTitle").innerHTML = "ERROR LOADING DATA - Please try reloading";
+		  document.getElementById("stationTitle").style.color = "red";
+		  var x = "no data";
+		  return -1;
 	  }
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
@@ -71,6 +74,7 @@
 		  document.getElementById("stationList").value = station;
 	  }
 	  document.getElementById("stationTitle").innerHTML = station;
+	  document.title = "VIA Rail Arrivals/Departures Board - " + station;
 	  for (i = 0; i <x.length; i++) {
 		  if(stations.includes(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue) === false) {
 			stations.push(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue);
@@ -146,6 +150,9 @@
 	  document.getElementById("stationList").value = station;
 	  sortTable("arrivals");
 	  sortTable("departures");
+	  
+	  var now = new Date();
+	  document.getElementById("lastUpdate").innerHTML = now.toLocaleString('en-CA', options);
 	}
 
 
