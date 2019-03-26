@@ -11,7 +11,16 @@
 	<br /><br />
 	<span>Station:</span>
 	<select id="stationList">
-	</select>
+	</select><br />
+	<span>Timezone:</span>
+	<select id="timezone">
+		<option value="America/Toronto">Eastern</option>
+		<option value="America/Halifax">Atlantic</option>
+		<option value="America/Winnipeg">Central</option>
+		<option value="America/Regina">Saskatchewan</option>
+		<option value="America/Edmonton">Mountain</option>
+		<option value="America/Vancouver">Pacific</option>
+	<select>
 	<br /><br />
 	<div id="stationBoard">
 		<h2>Arrivals</h2>
@@ -41,7 +50,8 @@
           var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th></tr>";
 	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th></tr>";
 	  var x = xmlDoc.getElementsByTagName("ServiceData");
-	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'America/Toronto', hour12: false };
+	  var timezone = document.getElementById("timezone").value;
+	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
 	  if(document.getElementById("stationList").value.length > 0) {
 		  var station = document.getElementById("stationList").value;
 	  } else {
@@ -101,6 +111,9 @@
 		loadDoc();
 	}
 	document.getElementById("stationList").onchange = function() {
+		loadDoc();
+	}
+	document.getElementById("timezone").onchange = function() {
 		loadDoc();
 	}
 	</script>
