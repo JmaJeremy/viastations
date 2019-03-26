@@ -12,6 +12,7 @@
 	<span>Station:</span>
 	<select id="stationList">
 	</select><br />
+	<p style="font-style:italic;color:red;font-size:small">If a station is missing from list, there are currently no arrivals/departures on the board.</p>
 	<span>Timezone:</span>
 	<select id="timezone">
 		<option value="America/Toronto">Eastern</option>
@@ -46,9 +47,10 @@
 	function myFunction(xml) {
 	  var i;
 	  var stations = [];
+	  stations = [];
 	  var xmlDoc = xml.responseXML;
-          var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th></tr>";
-	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th></tr>";
+	  var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th><th>Actual arrival</th></tr>";
+  	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th><th>Actual departure</th></tr>";
 	  var x = xmlDoc.getElementsByTagName("ServiceData");
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
@@ -59,15 +61,26 @@
 		  document.getElementById("stationList").value = station;
 	  }
 	  document.getElementById("stationTitle").innerHTML = station;
-	  for (i = 0; i <x.length; i++) { 
-		if(stations.includes(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue) == false)
+	  for (i = 0; i <x.length; i++) {
+		  if(stations.includes(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue) === false) {
 			stations.push(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue);
+		  }
+		//console.log(i + " " + x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue);
 		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
 			&& (x[i].getElementsByTagName("ScheduledArrival")[0].childNodes.length > 0) ) {
-			var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue);
-			//estArr.setHours(estArr.getHours() - 5);
+			if(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes.length > 0) {
+				var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue);
+				estArr = estArr.toLocaleString('en-CA', options);
+			} else {
+				var estArr = "N/A";
+			}
 			var schedArr = new Date(x[i].getElementsByTagName("ScheduledArrival")[0].childNodes[0].nodeValue);
-			//schedArr.setHours(schedArr.getHours() - 5);
+			if(x[i].getElementsByTagName("ActualArrival")[0].childNodes.length > 0) {
+				var actArr = new Date(x[i].getElementsByTagName("ActualArrival")[0].childNodes[0].nodeValue);
+				actArr = actArr.toLocaleString('en-ca', options);
+			} else {
+				var actArr = "N/A";
+			}
 
 			table += "<tr><td>" +
 			x[i].getElementsByTagName("Train")[0].childNodes[0].nodeValue +
@@ -76,13 +89,26 @@
 			"</td><td>" +
 				schedArr.toLocaleString('en-CA', options) +
 			"</td><td>" +
-				estArr.toLocaleString('en-CA', options) +
+				estArr +
+			"</td><td>" +
+				actArr +
 			"</td></tr>";
 		}
 		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
 			&& (x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes.length > 0) ) {
-			var estDep = new Date(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes[0].nodeValue);
+			if(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes.length > 0) {
+				var estDep = new Date(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes[0].nodeValue);
+				estDep = estDep.toLocaleString('en-CA', options);
+			} else {
+				var estDep = "N/A";
+			}
 			var schedDep = new Date(x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes[0].nodeValue);
+			if(x[i].getElementsByTagName("ActualDeparture")[0].childNodes.length > 0) {
+				var actDep = new Date(x[i].getElementsByTagName("ActualDeparture")[0].childNodes[0].nodeValue);
+				actDep = actArr.toLocaleString('en-ca', options);
+			} else {
+				var actDep = "N/A";
+			}
 
 			depTable += "<tr><td>" +
 			x[i].getElementsByTagName("Train")[0].childNodes[0].nodeValue +
@@ -91,7 +117,9 @@
 			"</td><td>" +
 				schedDep.toLocaleString('en-CA', options) +
 			"</td><td>" +
-				estDep.toLocaleString('en-CA', options) +
+				estDep +
+			"</td><td>" +
+				actDep +
 			"</td></tr>";
 
 
@@ -106,7 +134,47 @@
 	  });
 	  document.getElementById("stationList").innerHTML = stationList;
 	  document.getElementById("stationList").value = station;
+	  sortTable("arrivals");
+	  sortTable("departures");
 	}
+
+
+	function sortTable(tableName) {
+	  var table, rows, switching, i, x, y, shouldSwitch;
+	  table = document.getElementById(tableName);
+	  switching = true;
+	  /* Make a loop that will continue until
+	  no switching has been done: */
+	  while (switching) {
+	    // Start by saying: no switching is done:
+	    switching = false;
+	    rows = table.rows;
+	    /* Loop through all table rows (except the
+	    first, which contains table headers): */
+	    for (i = 1; i < (rows.length - 1); i++) {
+	      // Start by saying there should be no switching:
+	      shouldSwitch = false;
+	      /* Get the two elements you want to compare,
+	      one from current row and one from the next: */
+	      x = rows[i].getElementsByTagName("TD")[2];
+	      y = rows[i + 1].getElementsByTagName("TD")[2];
+	      // Check if the two rows should switch place:
+	      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+		// If so, mark as a switch and break the loop:
+		shouldSwitch = true;
+		break;
+	      }
+	    }
+	    if (shouldSwitch) {
+	      /* If a switch has been marked, make the switch
+	      and mark that a switch has been done: */
+	      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+	      switching = true;
+	    }
+	  }
+	}
+
+
 	window.onload = function() {
 		loadDoc();
 	}
