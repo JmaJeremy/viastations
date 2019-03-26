@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrivals Board</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<h1 id="stationTitle"></h1>
+	<button type="button" onclick="loadDoc()">Reload times</button>
+	<br /><br />
+	<span>Station:</span>
+	<select id="stationList">
+	</select>
+	<br /><br />
+	<div id="stationBoard">
+		<h2>Arrivals</h2>
+		<table id="arrivals" border="1"></table>
+
+		<h2>Departures</h2>
+		<table id="departures" border="1"></table>
+	
+	</div>
+
+	<script>
+	var url = "stations.php";
+	function loadDoc() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  myFunction(this);
+		}
+	  };
+	  xhttp.open("GET", url, true);
+	  xhttp.send();
+	}
+	function myFunction(xml) {
+	  var i;
+	  var stations = [];
+	  var xmlDoc = xml.responseXML;
+          var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th></tr>";
+	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th></tr>";
+	  var x = xmlDoc.getElementsByTagName("ServiceData");
+	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'America/Toronto', hour12: false };
+	  if(document.getElementById("stationList").value.length > 0) {
+		  var station = document.getElementById("stationList").value;
+	  } else {
+		  var station = "TORONTO";
+		  document.getElementById("stationList").value = station;
+	  }
+	  document.getElementById("stationTitle").innerHTML = station;
+	  for (i = 0; i <x.length; i++) { 
+		if(stations.includes(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue) == false)
+			stations.push(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue);
+		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
+			&& (x[i].getElementsByTagName("ScheduledArrival")[0].childNodes.length > 0) ) {
+			var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue);
+			//estArr.setHours(estArr.getHours() - 5);
+			var schedArr = new Date(x[i].getElementsByTagName("ScheduledArrival")[0].childNodes[0].nodeValue);
+			//schedArr.setHours(schedArr.getHours() - 5);
+
+			table += "<tr><td>" +
+			x[i].getElementsByTagName("Train")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("From")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+				schedArr.toLocaleString('en-CA', options) +
+			"</td><td>" +
+				estArr.toLocaleString('en-CA', options) +
+			"</td></tr>";
+		}
+		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
+			&& (x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes.length > 0) ) {
+			var estDep = new Date(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes[0].nodeValue);
+			var schedDep = new Date(x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes[0].nodeValue);
+
+			depTable += "<tr><td>" +
+			x[i].getElementsByTagName("Train")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+			x[i].getElementsByTagName("To")[0].childNodes[0].nodeValue +
+			"</td><td>" +
+				schedDep.toLocaleString('en-CA', options) +
+			"</td><td>" +
+				estDep.toLocaleString('en-CA', options) +
+			"</td></tr>";
+
+
+		}
+	  }
+	  document.getElementById("arrivals").innerHTML = table;
+	  document.getElementById("departures").innerHTML = depTable;
+	  stations.sort();
+	  var stationList = "";
+	  stations.forEach(function(e) {
+		  stationList += '<option value="' + e + '">' + e + '</option>' + "\n";
+	  });
+	  document.getElementById("stationList").innerHTML = stationList;
+	  document.getElementById("stationList").value = station;
+	}
+	window.onload = function() {
+		loadDoc();
+	}
+	document.getElementById("stationList").onchange = function() {
+		loadDoc();
+	}
+	</script>
+
+
+</body>
+</html>

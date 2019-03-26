@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+}
+
+h1#stationTitle {
+    color: gold;
+    background: black;
+    text-align: center;
+}
+
+table#arrivals, table#departures {
+    font-size: large;
+}
+
+th {
+    background-color: royalblue;
+    color: white;
+    font-size: larger;
+    font-style: italic;
+}
+
+td {
+    font-weight: bold;
+    background-color: white;
+}
+
+div#stationBoard {
+    width: 50%;
+    margin: auto;
+    border: 6px solid gold;
+    padding: 24px;
+    background-color: lightseagreen;
+}
+
+
+element.style {
+}
+h2 {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    /* margin-right: 5px; */
+    /* padding-right: 5px; */
+    width: fit-content;
+    border-top: 3px dashed gold;
+    border-bottom: 3px dashed gold;
+    padding: 0 5px;
+}
