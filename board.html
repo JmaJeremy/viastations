@@ -8,7 +8,7 @@
 <body>
 
 	<h1 id="stationTitle"></h1>
-	<button type="button" onclick="loadDoc()">Reload times</button>
+	<button type="button" class="reload" onclick="loadDoc()">Reload times</button>
 	<br /><br />
 	<span>Station:</span>
 	<select id="stationList">
@@ -33,6 +33,8 @@
 	
 	</div>
 
+	<button type="button" class="reload" onclick="loadDoc()">Reload times</button>
+
 	<script>
 	var url = "stations.php";
 	function loadDoc() {
@@ -52,7 +54,14 @@
 	  var xmlDoc = xml.responseXML;
 	  var table="<tr><th>No.</th><th>Origin</th><th>Scheduled arrival</th><th>Estimated arrival</th><th>Actual arrival</th></tr>";
   	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th><th>Actual departure</th></tr>";
-	  var x = xmlDoc.getElementsByTagName("ServiceData");
+	  if(xmlDoc.getElementsByTagName("ServiceData") == null || typeof(xmlDoc.getElementsByTagName("ServiceData") === "undefined")) {
+		  var x = xmlDoc.getElementsByTagName("ServiceData");
+	  } else {
+		  //loadDoc();
+		  alert("Problem loading data from source.");
+		  loadDoc();
+		  return 1;
+	  }
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
 	  if(document.getElementById("stationList").value.length > 0) {
