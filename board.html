@@ -106,7 +106,7 @@
 			var schedDep = new Date(x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes[0].nodeValue);
 			if(x[i].getElementsByTagName("ActualDeparture")[0].childNodes.length > 0) {
 				var actDep = new Date(x[i].getElementsByTagName("ActualDeparture")[0].childNodes[0].nodeValue);
-				actDep = actArr.toLocaleString('en-ca', options);
+				actDep = actDep.toLocaleString('en-ca', options);
 			} else {
 				var actDep = "N/A";
 			}
