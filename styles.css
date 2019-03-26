@@ -10,6 +10,11 @@ h1#stationTitle {
 
 table#arrivals, table#departures {
     font-size: large;
+    margin: 4px;
+    table-layout: auto;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 th {
@@ -25,7 +30,8 @@ td {
 }
 
 div#stationBoard {
-    width: 50%;
+    width: 80;
+    max-width: 800px;
     margin: auto;
     border: 6px solid gold;
     padding: 24px;
