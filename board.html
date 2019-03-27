@@ -58,6 +58,7 @@
   	  var depTable = "<tr><th>No.</th><th>Destination</th><th>Scheduled departure</th><th>Estimated departure</th><th>Actual departure</th></tr>";
 	  try {
 	 	 var x = xmlDoc.getElementsByTagName("ServiceData");
+		 document.getElementById("stationTitle").style.color = "gold";
 	  } catch(err) {
 		  console.log("Error loading data source");
 		  document.getElementById("stationTitle").innerHTML = "ERROR LOADING DATA - Please try reloading";
