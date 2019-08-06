@@ -1,0 +1,3183 @@
+<?xml version="1.0"?>
+<Services xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://viarailtsi.ca">
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CHESNAYE</Station>
+    <StationCode>CHES</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 02:25:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 02:25:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 02:23:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 02:23:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>M'CLINTOCK</Station>
+    <StationCode>MCLI</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 03:41:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 03:41:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 03:39:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 03:39:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>O'DAY</Station>
+    <StationCode>ODAY</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 04:26:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 04:26:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 04:24:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 04:24:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HERCHMER</Station>
+    <StationCode>HERC</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 05:05:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 05:05:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 05:03:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 05:03:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>THIBAUDEAU</Station>
+    <StationCode>THIB</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 06:31:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 06:31:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 06:29:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 06:29:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>WIVENHOE</Station>
+    <StationCode>WVHO</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 11:26:35Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 11:26:35Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 11:16:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 11:16:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>ILFORD</Station>
+    <StationCode>ILFO</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 12:01:47Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 12:01:47Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 11:53:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 11:53:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PIT SIDING</Station>
+    <StationCode>PITS</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 13:23:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 13:23:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 12:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 12:54:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>BRIDGAR</Station>
+    <StationCode>BRGR</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 14:45:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 14:45:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 14:16:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 14:16:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PIKWITONEI</Station>
+    <StationCode>PIKW</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 14:56:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 14:56:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 14:27:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 14:27:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>SIPIWESK</Station>
+    <StationCode>SIPI</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 15:23:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 15:23:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 14:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 14:54:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>LEVEN</Station>
+    <StationCode>LEVN</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 02:28:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:28:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 21:05:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 21:05:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>THICKET PORTAGE</Station>
+    <StationCode>THKP</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 02:45:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:45:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 21:22:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 21:22:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HOCKIN</Station>
+    <StationCode>HOCK</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 03:00:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:00:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 21:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 21:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>ODHILL</Station>
+    <StationCode>ODHI</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-04 23:16:27Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 23:16:27Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 22:21:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 22:21:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PIPUN</Station>
+    <StationCode>PIPN</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 00:25:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:25:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:34:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:34:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>TURNBULL</Station>
+    <StationCode>TURN</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 01:42:45Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:42:45Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:49:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:49:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DYCE</Station>
+    <StationCode>DYCE</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 02:47:04Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:47:04Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 02:00:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 02:00:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DERING</Station>
+    <StationCode>DERI</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 03:26:04Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:26:04Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 02:39:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 02:39:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CORMORANT</Station>
+    <StationCode>CORM</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 03:34:04Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:34:04Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 02:47:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 02:47:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HALCROW</Station>
+    <StationCode>HALC</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 03:45:04Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:45:04Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 02:58:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 02:58:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GILBERT PLAINS</Station>
+    <StationCode>GLBP</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-05 23:56:23Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 23:56:23Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 16:32:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 16:32:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>OCHRE RIVER</Station>
+    <StationCode>OCHR</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 01:12:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:12:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 17:20:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 17:20:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>LAURIER</Station>
+    <StationCode>LRIE</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 01:30:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:30:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 17:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 17:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>MCCREARY</Station>
+    <StationCode>MCCR</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 01:46:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:46:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 17:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 17:54:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GLENELLA</Station>
+    <StationCode>GLNA</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 02:26:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:26:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 18:34:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 18:34:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PLUMAS</Station>
+    <StationCode>PLUM</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 02:58:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:58:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 19:06:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 19:06:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GLADSTONE</Station>
+    <StationCode>GSTO</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 03:43:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:43:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 19:51:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 19:51:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PORTAGE LA PRAIRIE</Station>
+    <StationCode>PLPX</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 04:29:17Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 04:29:17Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 20:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 20:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>WINNIPEG</Station>
+    <StationCode>WNPG</StationCode>
+    <Train>692</Train>
+    <ScheduleDate>2019-08-03</ScheduleDate>
+    <From>CHURCHILL</From>
+    <To>WINNIPEG</To>
+    <EstimatedArrival>2019-08-06 05:37:17Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-05 21:45:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ASHCROFT</Station>
+    <StationCode>ASHN</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival />
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-03 05:32:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-03 05:32:02Z</ScheduledDeparture>
+    <ActualArrival>2019-08-03 05:32:00Z</ActualArrival>
+    <ActualDeparture>2019-08-03 05:32:02Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RICE LAKE</Station>
+    <StationCode>RCLK</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 16:50:39Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 16:50:39Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 06:35:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 06:35:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>COPELANDS LANDING</Station>
+    <StationCode>COPE</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 16:53:39Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 16:53:39Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 06:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 06:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>OTTERMERE</Station>
+    <StationCode>OTTM</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 17:07:50Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 17:07:50Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 06:46:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 06:46:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CANYON</Station>
+    <StationCode>CNYK</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 18:26:31Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:26:31Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 08:23:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 08:23:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RED LAKE ROAD</Station>
+    <StationCode>RLRX</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 18:54:31Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:54:31Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 08:51:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 08:51:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>SAVANT LAKE</Station>
+    <StationCode>SAVL</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 22:57:31Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 22:57:31Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 13:14:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 13:14:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FLINDT LANDING</Station>
+    <StationCode>FLTL</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 23:14:31Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 23:14:31Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 13:31:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 13:31:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ALLANWATER BRIDGE</Station>
+    <StationCode>ALWB</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-05 23:29:31Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 23:29:31Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 13:46:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 13:46:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>COLLINS</Station>
+    <StationCode>COLL</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 00:55:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 00:55:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:26:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:26:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ARMSTRONG</Station>
+    <StationCode>ARMG</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:26:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:26:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:57:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:57:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MUD RIVER</Station>
+    <StationCode>MUDR</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:58:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:58:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 15:29:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 15:29:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FERLAND</Station>
+    <StationCode>FERL</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:06:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:06:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 15:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 15:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>AUDEN</Station>
+    <StationCode>AUDN</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:43:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:43:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 16:14:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 16:14:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>NAKINA</Station>
+    <StationCode>NAKI</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:49:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:49:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 17:20:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 17:20:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>LONGLAC</Station>
+    <StationCode>LLAC</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 04:40:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 04:40:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 18:11:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 18:11:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CARAMAT</Station>
+    <StationCode>CARA</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 05:08:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:08:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 18:39:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 18:39:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>HILLSPORT</Station>
+    <StationCode>HLSP</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 05:58:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:58:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 19:29:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 19:29:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>HORNEPAYNE</Station>
+    <StationCode>HNPN</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 08:13:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 08:13:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:44:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 22:39:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>OBA</Station>
+    <StationCode>OBAX</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 09:59:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 09:59:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 23:30:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 23:30:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ELSAS</Station>
+    <StationCode>ELSA</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 11:33:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 11:33:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:04:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:04:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FOLEYET</Station>
+    <StationCode>FOLE</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 12:56:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 12:56:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:27:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:27:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>GOGAMA</Station>
+    <StationCode>GOGA</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 14:31:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 14:31:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 04:02:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 04:02:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WESTREE</Station>
+    <StationCode>WSTR</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 15:04:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 15:04:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 04:35:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 04:35:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RUEL</Station>
+    <StationCode>RUEL</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 15:21:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 15:21:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 04:52:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 04:52:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FELIX</Station>
+    <StationCode>FELX</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 15:29:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 15:29:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:00:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:00:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MCKEE'S CAMP</Station>
+    <StationCode>MCKC</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 15:49:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 15:49:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:20:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:20:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>LAFOREST</Station>
+    <StationCode>LAFO</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 16:02:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 16:02:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:33:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:33:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CAPREOL</Station>
+    <StationCode>CAPR</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 18:16:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 18:16:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 07:47:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 08:27:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>SUDBURY (JCT.)</Station>
+    <StationCode>SUDJ</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 19:18:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 19:18:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 08:49:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 08:49:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>PARRY SOUND</Station>
+    <StationCode>PARS</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 23:11:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 23:11:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 12:42:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 12:42:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WASHAGO</Station>
+    <StationCode>WSHG</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-02</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-07 01:28:08Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-07 01:28:08Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 14:59:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 14:59:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GILBERT PLAINS</Station>
+    <StationCode>GLBP</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 01:13:50Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:13:50Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 22:44:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 22:44:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>VEREGIN</Station>
+    <StationCode>VERE</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 03:35:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:35:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 01:12:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 01:12:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>MIKADO</Station>
+    <StationCode>MIKA</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 03:53:11Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 03:53:11Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 01:22:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 01:22:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HALCROW</Station>
+    <StationCode>HALC</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 12:47:19Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 12:47:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 09:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 09:01:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CORMORANT</Station>
+    <StationCode>CORM</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 12:58:19Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 12:58:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 09:12:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 09:12:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DERING</Station>
+    <StationCode>DERI</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 13:06:19Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 13:06:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 09:20:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 09:20:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DYCE</Station>
+    <StationCode>DYCE</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 13:45:19Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 13:45:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 09:59:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 09:59:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>TURNBULL</Station>
+    <StationCode>TURN</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 14:53:39Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 14:53:39Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 11:10:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 11:10:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>ODHILL</Station>
+    <StationCode>ODHI</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 17:39:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 17:39:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 13:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 13:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HOCKIN</Station>
+    <StationCode>HOCK</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 18:23:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:23:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:22:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:22:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>THICKET PORTAGE</Station>
+    <StationCode>THKP</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 18:38:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:38:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>LEVEN</Station>
+    <StationCode>LEVN</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-05 18:55:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:55:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:54:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PIT SIDING</Station>
+    <StationCode>PITS</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 01:35:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:35:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:35:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:35:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>ILFORD</Station>
+    <StationCode>ILFO</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 02:36:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:36:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:36:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:36:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>WIVENHOE</Station>
+    <StationCode>WVHO</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 03:13:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:13:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 03:13:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 03:13:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GILLAM</Station>
+    <StationCode>GILL</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 04:00:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 04:30:00Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 04:00:01Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 04:30:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>BIRD</Station>
+    <StationCode>BIRD</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 05:29:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:29:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:29:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:29:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>AMERY</Station>
+    <StationCode>AMRY</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 05:52:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:52:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:52:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:52:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>WEIR RIVER</Station>
+    <StationCode>WEIR</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 06:43:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 06:43:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 06:43:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 06:43:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>THIBAUDEAU</Station>
+    <StationCode>THIB</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 08:00:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 08:00:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 08:00:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 08:00:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HERCHMER</Station>
+    <StationCode>HERC</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 09:26:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 09:26:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 09:26:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 09:26:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>O'DAY</Station>
+    <StationCode>ODAY</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 10:05:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 10:05:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 10:05:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 10:05:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>M'CLINTOCK</Station>
+    <StationCode>MCLI</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 10:50:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 10:50:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 10:50:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 10:50:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CHESNAYE</Station>
+    <StationCode>CHES</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 12:06:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 12:06:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 12:06:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 12:06:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>TIDAL</Station>
+    <StationCode>TIDL</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 13:37:00Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 13:37:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 13:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 13:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CHURCHILL</Station>
+    <StationCode>CHUR</StationCode>
+    <Train>693</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>WINNIPEG</From>
+    <To>CHURCHILL</To>
+    <EstimatedArrival>2019-08-06 14:00:00Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 14:00:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HARVEY</Station>
+    <StationCode>HRVY</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-04 20:51:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 20:51:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 20:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 20:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>GOAT RIVER</Station>
+    <StationCode>GOAT</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 00:06:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:06:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 22:41:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 22:41:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>LOOS</Station>
+    <StationCode>LOOS</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 00:22:03Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:22:03Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 22:58:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 22:58:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DOME CREEK</Station>
+    <StationCode>DOMC</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 00:57:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:57:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:32:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:32:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>BEND</Station>
+    <StationCode>BEND</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 01:01:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:01:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:36:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:36:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PENNY</Station>
+    <StationCode>PENN</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 01:21:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:21:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:56:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:56:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>LONGWORTH</Station>
+    <StationCode>LWTH</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 01:36:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:36:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:11:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:11:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HUTTON</Station>
+    <StationCode>HUTT</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 01:49:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:49:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:24:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:24:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>SINCLAIR MILLS</Station>
+    <StationCode>SINM</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 01:55:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 01:55:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:30:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:30:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>MCGREGOR</Station>
+    <StationCode>MCGR</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 02:08:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:08:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:43:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:43:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>UPPER FRASER</Station>
+    <StationCode>UFRZ</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 02:17:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:17:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 00:52:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 00:52:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>ALZEA LAKE</Station>
+    <StationCode>ALZL</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 02:26:26Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:26:26Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 01:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 01:01:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>WILLOW RIVER</Station>
+    <StationCode>WILR</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 02:59:27Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 02:59:27Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 01:34:01Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 01:34:03Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>VANDERHOOF</Station>
+    <StationCode>VDRH</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 19:27:18Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 19:27:18Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 16:55:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 16:55:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>BURNS LAKE</Station>
+    <StationCode>BRNL</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 22:34:54Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 22:34:54Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 18:58:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 18:58:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>HOUSTON</Station>
+    <StationCode>HOUS</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-05 23:47:27Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 23:47:27Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 20:08:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 20:08:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>TELKWA</Station>
+    <StationCode>TELK</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 00:42:10Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 00:42:10Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 20:52:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 20:52:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>NEW HAZELTON</Station>
+    <StationCode>NHAZ</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 02:12:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:12:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 22:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 22:37:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>KITWANGA</Station>
+    <StationCode>KITW</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 03:02:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:02:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 23:27:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 23:27:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>CEDARVALE</Station>
+    <StationCode>CEDA</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 03:26:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:26:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 23:51:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 23:51:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>DORREEN</Station>
+    <StationCode>DORR</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 03:47:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:47:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:12:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:12:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PACIFIC</Station>
+    <StationCode>PACI</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 03:56:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:56:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:21:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:21:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>USK</Station>
+    <StationCode>USKX</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 04:15:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 04:15:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:40:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:40:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>TERRACE</Station>
+    <StationCode>TRRC</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 04:35:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 04:35:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:00:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:05:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>KWINITSA</Station>
+    <StationCode>KWIN</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 05:44:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:44:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:09:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:09:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Remote</Region>
+    <Station>PRINCE RUPERT</Station>
+    <StationCode>PRUP</StationCode>
+    <Train>005</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>JASPER</From>
+    <To>PRINCE RUPERT</To>
+    <EstimatedArrival>2019-08-06 07:00:43Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:25:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>LAFOREST</Station>
+    <StationCode>LAFO</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-04 23:59:09Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-04 23:59:09Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 22:48:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 22:48:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MCKEE'S CAMP</Station>
+    <StationCode>MCKC</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 00:12:09Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:12:09Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:01:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FELIX</Station>
+    <StationCode>FELX</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 00:32:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:32:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:21:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:21:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RUEL</Station>
+    <StationCode>RUEL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 00:36:14Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:36:14Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:28:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:28:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WESTREE</Station>
+    <StationCode>WSTR</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 00:50:21Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 00:50:21Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-04 23:45:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-04 23:45:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ELSAS</Station>
+    <StationCode>ELSA</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 05:10:59Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 05:10:59Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 03:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 03:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>OBA</Station>
+    <StationCode>OBAX</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 07:16:11Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 07:16:11Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 05:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 05:38:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>HILLSPORT</Station>
+    <StationCode>HLSP</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 12:20:16Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 12:20:16Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 08:05:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 08:05:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CARAMAT</Station>
+    <StationCode>CARA</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 13:02:52Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 13:02:52Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 08:55:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 08:55:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>NAKINA</Station>
+    <StationCode>NAKI</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 14:14:59Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 14:14:59Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 10:13:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 10:13:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>AUDEN</Station>
+    <StationCode>AUDN</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 15:22:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 15:22:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 11:19:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 11:19:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FERLAND</Station>
+    <StationCode>FERL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 16:42:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 16:42:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 11:56:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 11:56:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MUD RIVER</Station>
+    <StationCode>MUDR</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 16:51:43Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 16:51:43Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 12:05:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 12:05:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>COLLINS</Station>
+    <StationCode>COLL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 18:27:53Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 18:27:53Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 13:47:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 13:47:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ALLANWATER BRIDGE</Station>
+    <StationCode>ALWB</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 19:08:13Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 19:08:13Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:26:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:26:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>FLINDT LANDING</Station>
+    <StationCode>FLTL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 19:24:13Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 19:24:13Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:42:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:42:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>SAVANT LAKE</Station>
+    <StationCode>SAVL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-05 19:53:28Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-05 19:53:28Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 14:59:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 14:59:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CANYON</Station>
+    <StationCode>CNYK</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 00:19:52Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 00:19:52Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 19:10:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 19:10:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>REDDITT</Station>
+    <StationCode>RDDT</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:04:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:04:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 20:23:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 20:23:02Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:01:31Z</ActualArrival>
+    <ActualDeparture>2019-08-06 01:01:01Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MINAKI</Station>
+    <StationCode>MNKI</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:23:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:23:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 20:44:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 20:44:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>OTTERMERE</Station>
+    <StationCode>OTTM</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:40:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:40:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:01:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MALACHI</Station>
+    <StationCode>MLCH</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:46:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:46:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:07:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:07:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>COPELANDS LANDING</Station>
+    <StationCode>COPE</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:48:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:48:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:09:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:09:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RICE LAKE</Station>
+    <StationCode>RCLK</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 01:51:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:51:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:12:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:12:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WINNITOBA</Station>
+    <StationCode>WNTB</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 02:05:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:05:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:26:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:26:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>OPHIR</Station>
+    <StationCode>OPHR</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 02:10:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:10:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:31:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:31:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>BRERETON LAKE</Station>
+    <StationCode>BRTL</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 02:28:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:28:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 21:49:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 21:49:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ELMA</Station>
+    <StationCode>ELMA</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 02:49:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:49:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-05 22:10:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-05 22:10:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WINNIPEG</Station>
+    <StationCode>WNPG</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 05:09:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 05:09:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:30:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:30:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>PORTAGE LA PRAIRIE</Station>
+    <StationCode>PLPX</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 08:43:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 08:43:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 04:04:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 04:04:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>RIVERS</Station>
+    <StationCode>RVRS</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 11:10:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 11:10:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 06:31:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 06:31:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>MELVILLE</Station>
+    <StationCode>MELV</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 15:33:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 15:33:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 10:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 11:04:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>WATROUS</Station>
+    <StationCode>WATR</StationCode>
+    <Train>001</Train>
+    <ScheduleDate>2019-08-04</ScheduleDate>
+    <From>TORONTO</From>
+    <To>VANCOUVER</To>
+    <EstimatedArrival>2019-08-06 18:33:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 18:33:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 13:54:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 13:54:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>STRATFORD</Station>
+    <StationCode>STRF</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:16:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:16:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:03:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:05:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>KITCHENER</Station>
+    <StationCode>KITC</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:53:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:53:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:40:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:42:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>GUELPH</Station>
+    <StationCode>GUEL</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:23:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:23:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:10:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:12:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>GEORGETOWN</Station>
+    <StationCode>GEOR</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:49:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:49:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:36:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:37:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BRAMPTON</Station>
+    <StationCode>BRMP</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:59:02Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:59:02Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:46:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:47:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>088</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>LONDON</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:30:02Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:17:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BRANTFORD</Station>
+    <StationCode>BRTF</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 01:17:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:17:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:50:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:51:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>WOODSTOCK</Station>
+    <StationCode>WDST</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 01:44:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:44:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:17:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:18:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>INGERSOLL</Station>
+    <StationCode>INGR</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 01:57:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:57:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:30:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:31:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>LONDON</Station>
+    <StationCode>LNDN</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 02:19:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:19:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:52:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:57:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>GLENCOE</Station>
+    <StationCode>GLNC</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 02:52:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:52:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:25:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:26:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>CHATHAM</Station>
+    <StationCode>CHAT</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 03:24:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:24:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:57:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:59:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>WINDSOR</Station>
+    <StationCode>WDON</StationCode>
+    <Train>079</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 04:11:44Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:44:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BELLEVILLE</Station>
+    <StationCode>BLVL</StationCode>
+    <Train>650</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>KINGSTON</To>
+    <EstimatedArrival>2019-08-06 01:11:28Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:19:00Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:18:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:19:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:11:27Z</ActualArrival>
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>KINGSTON</Station>
+    <StationCode>KGON</StationCode>
+    <Train>650</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>KINGSTON</To>
+    <EstimatedArrival>2019-08-06 01:49:34Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:56:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>FALLOWFIELD</Station>
+    <StationCode>FALL</StationCode>
+    <Train>054</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 01:49:30Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:49:30Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:46:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:49:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OTTAWA</Station>
+    <StationCode>OTTW</StationCode>
+    <Train>054</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 02:10:30Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 02:07:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>DORVAL</Station>
+    <StationCode>DORV</StationCode>
+    <Train>068</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>MONTRÉAL</To>
+    <EstimatedArrival>2019-08-06 01:48:28Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:48:28Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:27:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:29:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>MONTRÉAL</Station>
+    <StationCode>MTRL</StationCode>
+    <Train>068</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>MONTRÉAL</To>
+    <EstimatedArrival>2019-08-06 02:10:28Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:49:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>STE-FOY</Station>
+    <StationCode>SFOY</StationCode>
+    <Train>028</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>QUÉBEC</To>
+    <EstimatedArrival>2019-08-06 01:22:57Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:30:00Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:28:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:30:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>QUÉBEC</Station>
+    <StationCode>QBEC</StationCode>
+    <Train>028</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>QUÉBEC</To>
+    <EstimatedArrival>2019-08-06 01:54:00Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:54:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OTTAWA</Station>
+    <StationCode>OTTW</StationCode>
+    <Train>039</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>QUÉBEC</From>
+    <To>FALLOWFIELD</To>
+    <EstimatedArrival>2019-08-06 00:55:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:01:21Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:02:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:12:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 00:55:41Z</ActualArrival>
+    <ActualDeparture>2019-08-06 01:01:21Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>FALLOWFIELD</Station>
+    <StationCode>FALL</StationCode>
+    <Train>039</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>QUÉBEC</From>
+    <To>FALLOWFIELD</To>
+    <EstimatedArrival>2019-08-06 01:17:28Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:29:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OSHAWA</Station>
+    <StationCode>OSHA</StationCode>
+    <Train>647</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:06:49Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:08:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:10:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:12:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:06:39Z</ActualArrival>
+    <ActualDeparture>2019-08-06 01:08:19Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>647</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:42:49Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:45:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>LONDON</Station>
+    <StationCode>LNDN</StationCode>
+    <Train>087</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>SARNIA</To>
+    <EstimatedArrival>2019-08-06 01:17:06Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:17:06Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:09:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:14:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>STRATHROY</Station>
+    <StationCode>STRR</StationCode>
+    <Train>087</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>SARNIA</To>
+    <EstimatedArrival>2019-08-06 01:43:06Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:43:06Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:35:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:37:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>WYOMING</Station>
+    <StationCode>WYOM</StationCode>
+    <Train>087</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>SARNIA</To>
+    <EstimatedArrival>2019-08-06 02:11:06Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:11:06Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:03:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:05:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>SARNIA</Station>
+    <StationCode>SARN</StationCode>
+    <Train>087</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>SARNIA</To>
+    <EstimatedArrival>2019-08-06 02:28:06Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 02:20:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>NAPANEE</Station>
+    <StationCode>NAPN</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 01:00:44Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:00:44Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:53:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:54:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:00:04Z</ActualArrival>
+    <ActualDeparture>2019-08-06 00:59:34Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>KINGSTON</Station>
+    <StationCode>KGON</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 01:17:34Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:17:34Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:13:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:16:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>GANANOQUE</Station>
+    <StationCode>GANA</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 01:41:34Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:41:34Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:38:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BROCKVILLE</Station>
+    <StationCode>BRKV</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 02:05:34Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:05:34Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:03:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>SMITHS FALLS</Station>
+    <StationCode>SMTF</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 02:35:34Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:35:34Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:31:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:33:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>FALLOWFIELD</Station>
+    <StationCode>FALL</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 03:02:34Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:02:34Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:58:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 03:00:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OTTAWA</Station>
+    <StationCode>OTTW</StationCode>
+    <Train>048</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>OTTAWA</To>
+    <EstimatedArrival>2019-08-06 03:20:34Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:16:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>CORNWALL</Station>
+    <StationCode>CWLL</StationCode>
+    <Train>668</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>MONTRÉAL</To>
+    <EstimatedArrival>2019-08-06 01:54:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:54:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:49:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:51:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>DORVAL</Station>
+    <StationCode>DORV</StationCode>
+    <Train>668</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>MONTRÉAL</To>
+    <EstimatedArrival>2019-08-06 02:42:01Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:42:01Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:37:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:40:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>MONTRÉAL</Station>
+    <StationCode>MTRL</StationCode>
+    <Train>668</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>MONTRÉAL</To>
+    <EstimatedArrival>2019-08-06 03:04:01Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 02:59:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>CHATHAM</Station>
+    <StationCode>CHAT</StationCode>
+    <Train>075</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 01:12:19Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:12:19Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:04:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>WINDSOR</Station>
+    <StationCode>WDON</StationCode>
+    <Train>075</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>TORONTO</From>
+    <To>WINDSOR</To>
+    <EstimatedArrival>2019-08-06 02:07:13Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:56:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BRANTFORD</Station>
+    <StationCode>BRTF</StationCode>
+    <Train>078</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>WINDSOR</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:06:23Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:06:23Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:43:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:45:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:06:18Z</ActualArrival>
+    <ActualDeparture>2019-08-06 01:07:28Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>ALDERSHOT</Station>
+    <StationCode>ALDR</StationCode>
+    <Train>078</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>WINDSOR</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:37:10Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:37:10Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:13:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:15:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OAKVILLE</Station>
+    <StationCode>OAKV</StationCode>
+    <Train>078</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>WINDSOR</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:51:10Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:51:10Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:27:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:29:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>078</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>WINDSOR</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:15:10Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 01:51:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>069</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>ALDERSHOT</To>
+    <EstimatedArrival>2019-08-06 01:20:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:39:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:15:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:34:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OAKVILLE</Station>
+    <StationCode>OAKV</StationCode>
+    <Train>069</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>ALDERSHOT</To>
+    <EstimatedArrival>2019-08-06 02:00:25Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:00:25Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:55:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:57:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>ALDERSHOT</Station>
+    <StationCode>ALDR</StationCode>
+    <Train>069</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>ALDERSHOT</To>
+    <EstimatedArrival>2019-08-06 02:14:25Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 02:09:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>KINGSTON</Station>
+    <StationCode>KGON</StationCode>
+    <Train>669</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:08:47Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:15:00Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:12:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:15:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 01:09:02Z</ActualArrival>
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OSHAWA</Station>
+    <StationCode>OSHA</StationCode>
+    <Train>669</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:59:22Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:04:00Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 03:02:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 03:04:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>669</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>MONTRÉAL</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:33:00Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:33:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>KINGSTON</Station>
+    <StationCode>KGON</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 00:57:40Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 00:57:40Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:38:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:41:00Z</ScheduledDeparture>
+    <ActualArrival>2019-08-06 00:57:47Z</ActualArrival>
+    <ActualDeparture>2019-08-06 01:00:38Z</ActualDeparture>
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>BELLEVILLE</Station>
+    <StationCode>BLVL</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:39:24Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:39:24Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:20:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:22:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TRENTON JCT.</Station>
+    <StationCode>TRNJ</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 01:51:24Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 01:51:24Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:32:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 01:32:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>COBOURG</Station>
+    <StationCode>CBRG</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:18:24Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:18:24Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 01:59:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:00:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>OSHAWA</Station>
+    <StationCode>OSHA</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 02:50:24Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 02:50:24Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:31:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:33:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>GUILDWOOD</Station>
+    <StationCode>GUIL</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:07:24Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:07:24Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:48:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:50:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Corridor</Region>
+    <Station>TORONTO</Station>
+    <StationCode>TRTO</StationCode>
+    <Train>059</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>OTTAWA</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:26:24Z</EstimatedArrival>
+    <EstimatedDeparture />
+    <ScheduledArrival>2019-08-06 03:07:00Z</ScheduledArrival>
+    <ScheduledDeparture />
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>KATZ</Station>
+    <StationCode>KATZ</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 00:57:05Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 00:57:05Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 00:17:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 00:17:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>NORTH BEND</Station>
+    <StationCode>NBND</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 03:21:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 03:21:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 02:46:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 02:46:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>ASHCROFT</Station>
+    <StationCode>ASHN</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 06:07:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 06:07:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 05:32:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 05:32:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>KAMLOOPS NORTH</Station>
+    <StationCode>KAMN</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 07:52:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 07:52:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 07:17:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 07:52:00Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>CLEARWATER</Station>
+    <StationCode>CLWT</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 10:33:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 10:33:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 09:58:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 09:58:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>BLUE RIVER</Station>
+    <StationCode>BLUE</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 12:46:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 12:46:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 12:11:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 12:11:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+  <ServiceData>
+    <Region>Long Haul</Region>
+    <Station>VALEMOUNT</Station>
+    <StationCode>VLMT</StationCode>
+    <Train>002</Train>
+    <ScheduleDate>2019-08-05</ScheduleDate>
+    <From>VANCOUVER</From>
+    <To>TORONTO</To>
+    <EstimatedArrival>2019-08-06 14:36:20Z</EstimatedArrival>
+    <EstimatedDeparture>2019-08-06 14:36:20Z</EstimatedDeparture>
+    <ScheduledArrival>2019-08-06 14:01:00Z</ScheduledArrival>
+    <ScheduledDeparture>2019-08-06 14:01:02Z</ScheduledDeparture>
+    <ActualArrival />
+    <ActualDeparture />
+  </ServiceData>
+</Services>

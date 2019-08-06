@@ -37,7 +37,7 @@
 	<button type="button" class="reload" onclick="loadDoc()">Reload times</button>
 
 	<script>
-	var url = "stations.php";
+	var url = "archive/latest/StationSchedule.xml";
 	var j = 0;
 	function loadDoc() {
 	  var xhttp = new XMLHttpRequest();
@@ -84,14 +84,14 @@
 		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
 			&& (x[i].getElementsByTagName("ScheduledArrival")[0].childNodes.length > 0) ) {
 			if(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes.length > 0) {
-				var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue);
+				var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 				estArr = estArr.toLocaleString('en-CA', options);
 			} else {
 				var estArr = "N/A";
 			}
-			var schedArr = new Date(x[i].getElementsByTagName("ScheduledArrival")[0].childNodes[0].nodeValue);
+			var schedArr = new Date(x[i].getElementsByTagName("ScheduledArrival")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 			if(x[i].getElementsByTagName("ActualArrival")[0].childNodes.length > 0) {
-				var actArr = new Date(x[i].getElementsByTagName("ActualArrival")[0].childNodes[0].nodeValue);
+				var actArr = new Date(x[i].getElementsByTagName("ActualArrival")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 				actArr = actArr.toLocaleString('en-ca', options);
 			} else {
 				var actArr = "N/A";
@@ -112,14 +112,14 @@
 		if( (x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue == station)
 			&& (x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes.length > 0) ) {
 			if(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes.length > 0) {
-				var estDep = new Date(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes[0].nodeValue);
+				var estDep = new Date(x[i].getElementsByTagName("EstimatedDeparture")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 				estDep = estDep.toLocaleString('en-CA', options);
 			} else {
 				var estDep = "N/A";
 			}
-			var schedDep = new Date(x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes[0].nodeValue);
+			var schedDep = new Date(x[i].getElementsByTagName("ScheduledDeparture")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 			if(x[i].getElementsByTagName("ActualDeparture")[0].childNodes.length > 0) {
-				var actDep = new Date(x[i].getElementsByTagName("ActualDeparture")[0].childNodes[0].nodeValue);
+				var actDep = new Date(x[i].getElementsByTagName("ActualDeparture")[0].childNodes[0].nodeValue.replace(' ', 'T'));
 				actDep = actDep.toLocaleString('en-ca', options);
 			} else {
 				var actDep = "N/A";
