@@ -1,1 +1,1 @@
-Hosted at <https://trips.jeremy.click/viastation/board.html>
+Hosted at <https://viarail.live/>
