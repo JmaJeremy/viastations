@@ -51,18 +51,33 @@
 
 	<script>
 	var url = "archive/latest/StationSchedule.xml";
+	var url2 = "get_stations.php";
 	var j = 0;
+	var stationMaster = "";
 	function loadDoc() {
+	  var xstn = new XMLHttpRequest();
+	  xstn.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			stationMaster = getStations(this).responseText;
+		}
+	  };
+	  xstn.open("GET", url2, true);
+	  xstn.send();
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-		  myFunction(this);
+		  myFunction(this, stationMaster);
 		}
 	  };
 	  xhttp.open("GET", url, true);
 	  xhttp.send();
 	}
-	function myFunction(xml) {
+	function getStations(stationHTML) {
+//		console.log(stationHTML)
+		return stationHTML;
+	}
+	function myFunction(xml, stationMaster) {
+//	  console.log(stationMaster)
 	  var i;
 	  var stations = [];
 	  stations = [];
@@ -81,10 +96,10 @@
 	  }
 	  var userTimezone = "";
 	  userTimezone = getCookie('usertimezone');
-	  console.log(userTimezone);
+//	  console.log(userTimezone);
 	  if(typeof userTimezone == 'string' && userTimezone.length > 0) {
 		  document.getElementById("timezone").value = userTimezone;
-		  console.log(document.getElementById("timezone").options);
+//		  console.log(document.getElementById("timezone").options);
 		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  } else {
 		  setCookie('usertimezone',document.getElementById("timezone").value,30);
@@ -93,7 +108,7 @@
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
 	  var userStation = getCookie('userstation');
-	  console.log(userStation);
+//	  console.log(userStation);
 	  if(document.getElementById("stationList").value.length > 0) {
 		  var station = document.getElementById("stationList").value;
 		  setCookie('userstation',station,1)
@@ -103,7 +118,7 @@
 		  var station = "TORONTO";
 		  document.getElementById("stationList").value = station;
 	  }
-	  console.log(station)
+//	  console.log(station)
 	  document.getElementById("stationTitle").innerHTML = station;
 	  document.title = "VIA Rail Arrivals/Departures Board - " + station;
 	  for (i = 0; i <x.length; i++) {
@@ -177,7 +192,7 @@
 	  stations.forEach(function(e) {
 		  stationList += '<option value="' + e + '">' + e + '</option>' + "\n";
 	  });
-	  document.getElementById("stationList").innerHTML = stationList;
+	  document.getElementById("stationList").innerHTML = stationMaster;
 	  document.getElementById("stationList").value = station;
 	  sortTable("arrivals");
 	  sortTable("departures");
@@ -260,7 +275,7 @@
 	</script>
 	<div>This is an independently operated website, and is not associated with nor endorsed by Via Rail Canada. Copyright &copy;2019 Jerail Media.<br />
 		For technical support or other inquiries, contact <a href="mailto:webmaster@viarail.live">webmaster@viarail.live</a><br />
-		The source code for this website is freely available under the MIT license on <a href="https://github.com/JmaJeremy/viastations">Github</a>. </div>
+		The source code for this website is freely available under the MIT license on <a target="_blank" href="https://github.com/JmaJeremy/viastations">Github</a>. </div>
 
 
 </body>
