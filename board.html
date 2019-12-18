@@ -4,6 +4,17 @@
 	<title>VIA Rail Arrivals/Departures Board</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<meta property="og:url"		content="https://viarail.live/" />
+	<meta property="og:type"		content="website" />
+	<meta property="og:title"		content="VIA Rail Arrivals/Departures Board" />
+	<meta property="og:description"		content="Live train arrivals/departure times for every VIA Rail station in Canada" />
+	<meta property="og:image"		content="https://viastation-assets.s3.amazonaws.com/depboard.jpg" />
+	<meta property="og:image:width"		content="600" />
+	<meta property="og:image:height"		content="450" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -13,7 +24,7 @@
 	<span>Station:</span>
 	<select id="stationList">
 	</select><br />
-	<p style="font-style:italic;color:red;font-size:small">If a station is missing from list, there are currently no arrivals/departures on the board.</p>
+	<p style="font-style:italic;color:white;font-weight:bold;background-color:black">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
 	<span>Timezone:</span>
 	<select id="timezone">
 		<option value="America/Toronto">Eastern</option>
@@ -25,6 +36,7 @@
 	<select>
 	<br /><br />
 	<div id="stationBoard">
+		<h3 style="color:white;background-color:black;">All times displayed in <span style="font-weight:bold;font-style:italic" id="tz"></span> time.</h3>
 		<h2>Arrivals</h2>
 		<table id="arrivals" border="1"></table>
 
@@ -71,8 +83,11 @@
 	  console.log(userTimezone);
 	  if(typeof userTimezone == 'string' && userTimezone.length > 0) {
 		  document.getElementById("timezone").value = userTimezone;
+		  console.log(document.getElementById("timezone").options);
+		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  } else {
 		  setCookie('usertimezone',document.getElementById("timezone").value,30);
+		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  }
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
@@ -216,6 +231,7 @@
 	}
 	document.getElementById("timezone").onchange = function() {
 		setCookie('usertimezone',document.getElementById("timezone").value,30);
+		document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 		loadDoc();
 	}
 	function setCookie(name,value,days) {
@@ -241,7 +257,9 @@
 	    document.cookie = name+'=; Max-Age=-99999999;';  
 	}
 	</script>
-	<div>This is an independently operated website, and is not associated with nor endorsed by Via Rail Canada. Copyright &copy;2019 Jerail Media.</div>
+	<div>This is an independently operated website, and is not associated with nor endorsed by Via Rail Canada. Copyright &copy;2019 Jerail Media.<br />
+		For technical support or other inquiries, contact <a href="mailto:webmaster@viarail.live">webmaster@viarail.live</a><br />
+		The source code for this website is freely available under the MIT license on <a href="https://github.com/JmaJeremy/viastations">Github</a>. </div>
 
 
 </body>
