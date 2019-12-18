@@ -19,12 +19,13 @@
 <body>
 
 	<h1 id="stationTitle"></h1>
+	<h3>VIA Rail Live Arrivals/Departures Board</h3>
 	<button type="button" class="reload" onclick="loadDoc()">Reload times</button>
 	<br /><br />
 	<span>Station:</span>
 	<select id="stationList">
 	</select><br />
-	<p style="font-style:italic;color:white;font-weight:bold;background-color:black">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
+	<p style="font-style:italic;color:white;font-weight:bold;background-color:black;border:5px solid red">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
 	<span>Timezone:</span>
 	<select id="timezone">
 		<option value="America/Toronto">Eastern</option>
