@@ -26,7 +26,7 @@
 	<select id="stationList">
 	</select><br />
 	<p style="font-style:italic;color:white;font-weight:bold;background-color:black;border:5px solid red">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
-	<span>Timezone:</span>
+	<!--span>Timezone:</span>
 	<select id="timezone">
 		<option value="America/Toronto">Eastern</option>
 		<option value="America/Halifax">Atlantic</option>
@@ -34,10 +34,17 @@
 		<option value="America/Regina">Saskatchewan</option>
 		<option value="America/Edmonton">Mountain</option>
 		<option value="America/Vancouver">Pacific</option>
-	<select>
+	<select-->
 	<br /><br />
 	<div id="stationBoard">
-		<h3 style="color:white;background-color:black;">All times displayed in <span style="font-weight:bold;font-style:italic" id="tz"></span> time.</h3>
+		<h3 style="color:white;background-color:black;">All times displayed in <select id="timezone">
+		<option value="America/Toronto">Eastern</option>
+		<option value="America/Halifax">Atlantic</option>
+		<option value="America/Winnipeg">Central</option>
+		<option value="America/Regina">Saskatchewan</option>
+		<option value="America/Edmonton">Mountain</option>
+		<option value="America/Vancouver">Pacific</option>
+	<select> time.</h3>
 		<h2>Arrivals</h2>
 		<table id="arrivals" border="1"></table>
 
@@ -54,6 +61,7 @@
 	var url2 = "get_stations.php";
 	var j = 0;
 	var stationMaster = "";
+	var stnTz = "";
 	function loadDoc() {
 	  var xstn = new XMLHttpRequest();
 	  xstn.onreadystatechange = function() {
@@ -61,7 +69,7 @@
 			stationMaster = getStations(this).responseText;
 		}
 	  };
-	  xstn.open("GET", url2, true);
+	  xstn.open("GET", url2, false);
 	  xstn.send();
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
@@ -75,6 +83,19 @@
 	function getStations(stationHTML) {
 //		console.log(stationHTML)
 		return stationHTML;
+	}
+	function getTimezone(stationName) {
+		var url3 = "https://viarail.live/get_stn_tz.php?stn=" + stationName;
+//		console.log(url3);
+		var xtz = new XMLHttpRequest();
+		xtz.onreadystatechange = function() {
+			if(this.readyState == 4 && this.status == 200) {
+				stnTz = this.responseText;
+			}
+		};
+		xtz.open("GET", url3, false);
+		xtz.send();
+		return stnTz;
 	}
 	function myFunction(xml, stationMaster) {
 //	  console.log(stationMaster)
@@ -100,10 +121,10 @@
 	  if(typeof userTimezone == 'string' && userTimezone.length > 0) {
 		  document.getElementById("timezone").value = userTimezone;
 //		  console.log(document.getElementById("timezone").options);
-		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
+//		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  } else {
 		  setCookie('usertimezone',document.getElementById("timezone").value,30);
-		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
+//		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  }
 	  var timezone = document.getElementById("timezone").value;
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
@@ -244,10 +265,16 @@
 	document.getElementById("stationList").onchange = function() {
 		setCookie('userstation',document.getElementById("stationList").value,1);
 		loadDoc();
+		var tz = getTimezone(document.getElementById("stationList").value);
+//		console.log(tz);
+		if(tz.length > 0) {
+			setCookie('usertimezone',tz,1);
+			document.getElementById("timezone").value = tz;
+		}
 	}
 	document.getElementById("timezone").onchange = function() {
 		setCookie('usertimezone',document.getElementById("timezone").value,30);
-		document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
+//		document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 		loadDoc();
 	}
 	function setCookie(name,value,days) {
