@@ -24,7 +24,8 @@
 	<br /><br />
 	<span>Station:</span>
 	<select id="stationList">
-	</select><br />
+	</select><span id="favourite"></span><span id="delete"></span><br />
+	<div id="favourites"></div>
 	<p style="font-style:italic;color:white;font-weight:bold;background-color:black;border:5px solid red">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
 	<!--span>Timezone:</span>
 	<select id="timezone">
@@ -62,6 +63,15 @@
 	var j = 0;
 	var stationMaster = "";
 	var stnTz = "";
+	var urlParams = new URLSearchParams(window.location.search);
+
+	console.log(urlParams.has('stn'));
+	console.log(urlParams.get('stn'));
+	if(urlParams.has('stn')) {
+		setCookie('userstation',urlParams.get('stn'),1);
+		window.location.search = '';
+	}
+	document.getElementById("favourites").innerHTML = "Favourite stations: " + getFavs();
 	function loadDoc() {
 	  var xstn = new XMLHttpRequest();
 	  xstn.onreadystatechange = function() {
@@ -127,6 +137,10 @@
 //		  document.getElementById("tz").innerHTML = document.getElementById("timezone").options[document.getElementById("timezone").selectedIndex].text;
 	  }
 	  var timezone = document.getElementById("timezone").value;
+	  if((['America/Toronto','America/Halifax','America/Winnipeg','America/Regina','America/Edmonton','America/Vancouver'].includes(timezone)) == false) {
+		  timezone = 'America/Toronto';
+	  }
+	  console.log(timezone);
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
 	  var userStation = getCookie('userstation');
 //	  console.log(userStation);
@@ -215,6 +229,8 @@
 	  });
 	  document.getElementById("stationList").innerHTML = stationMaster;
 	  document.getElementById("stationList").value = station;
+          document.getElementById("favourite").innerHTML = '<button onclick=\'addFav("' + station + '")\'>Add favourite</button>';
+	  document.getElementById("delete").innerHTML = '<button onclick=\'delFav("' + station + '")\'>Delete favourite</button>';
 	  sortTable("arrivals");
 	  sortTable("departures");
 	  
@@ -298,6 +314,33 @@
 	}
 	function eraseCookie(name) {   
 	    document.cookie = name+'=; Max-Age=-99999999;';  
+	}
+	function addFav(name) {
+		var favs = getCookie('favs');
+		favs = favs + "," + name;
+		setCookie('favs', favs, 365);
+		document.getElementById("favourites").innerHTML = "Favourite stations: " + getFavs();
+	}
+	function getFavs() {
+		var favs = getCookie('favs').split(',');
+		var output = "";
+		favs.forEach(function(fav) {
+			if(fav != null && fav != 'null' && fav.length > 0) {
+				output += '<a href="https://viarail.live/?stn=' + fav + '">' + fav + '</a>, ';
+			}
+		});
+		return output;
+	}
+	function delFav(name) {
+		var favs = getCookie('favs').split(',');
+		var newFavs = "";
+		favs.forEach(function(fav) {
+			if(fav != name) {
+				newFavs += "," + fav;
+			}
+		});
+		setCookie('favs', newFavs, 365);
+		document.getElementById("favourites").innerHTML = "Favourite stations: " + getFavs();
 	}
 	</script>
 	<div>This is an independently operated website, and is not associated with nor endorsed by Via Rail Canada. Copyright &copy;2019 Jerail Media.<br />

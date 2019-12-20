@@ -16,7 +16,7 @@ for child in root:
     with open('stops.txt') as csvfile:
         stops = csv.reader(csvfile)
         for stop in stops:
-            if child[1].text == stop[2].upper():
+            if child[2].text == stop[1].upper():
                 timezone = stop[6]
     sql = "INSERT OR REPLACE INTO stations(code, name, date, timezone) VALUES(\"%s\", \"%s\", \"%s\", \"%s\")" % (child[2].text, child[1].text, date, timezone)
 #    print(sql)

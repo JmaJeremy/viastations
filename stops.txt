@@ -2,7 +2,7 @@ stop_id,stop_code,stop_name,location_type,stop_lon,stop_lat,stop_timezone,parent
 199,BENN,Benny,0,-81.630163,46.781815,America/Toronto,,
 344,ALEX,Alexandria,0,-74.639672,45.31805,America/Toronto,,1
 345,YONK,Yonkers,0,-73.9025018097,40.9355734276,America/New_York,,
-346,NIAG,Niagara Falls,0,-79.0633386904,43.1089370258,America/New_York,,1
+346,NIAG,Niagara Falls,0,-79.0633386904,43.1089370258,America/Toronto,,1
 347,OCHR,Ochre River,0,-99.7818673939,51.0613988567,America/Winnipeg,,
 340,WVHO,Wivenhoe,0,-95.213765,56.176547,America/Winnipeg,,
 341,SARN,Sarnia,0,-82.38892,42.95709,America/Toronto,,1
@@ -16,7 +16,7 @@ stop_id,stop_code,stop_name,location_type,stop_lon,stop_lat,stop_timezone,parent
 296,AGAS,Agassiz,0,-121.764238,49.239552,America/Vancouver,,
 297,THIB,Thibaudeau,0,-94.146446,57.082879,America/Winnipeg,,
 294,TELK,Telkwa,0,-127.050533767,54.6914023016,America/Vancouver,,
-295,SMRB,Saint-Maurice Rivière Boom,0,-73.749198,47.898494,America/Toronto,,
+295,SMRB,Saint-Maurice Rivière-Boom,0,-73.749198,47.898494,America/Toronto,,
 292,TIMB,Timbrell,0,-74.764449,47.968028,America/Toronto,,
 293,OBRI,O'Brien,0,-85.139115,48.517478,America/Toronto,,
 290,SIPI,Sipiwesk,0,-97.388531,55.462715,America/Winnipeg,,
