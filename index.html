@@ -24,9 +24,9 @@
 	<br /><br />
 	<span>Station:</span>
 	<select id="stationList">
-	</select><span id="favourite"></span><span id="delete"></span><br />
-	<div id="favourites"></div>
-	<p style="font-style:italic;color:white;font-weight:bold;background-color:black;border:5px solid red">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p>
+	</select><div id="bookmarks"><div id="favbuttons"><span class="favbutton" id="favourite"></span><span class="favbutton" id="delete"></span></div>
+	<span id="favourites"></span> <span><-- To keep a handy link to your favourite station, simply click and drag one of these links up to your bookmarks bar.</span></div>
+	<!--p style="font-style:italic;color:white;font-weight:bold;background-color:black;border:5px solid red">If a station is missing from list, there are currently no arrivals/departures listed by VIA at that station.</p-->
 	<!--span>Timezone:</span>
 	<select id="timezone">
 		<option value="America/Toronto">Eastern</option>
@@ -65,10 +65,15 @@
 	var stnTz = "";
 	var urlParams = new URLSearchParams(window.location.search);
 
-	console.log(urlParams.has('stn'));
-	console.log(urlParams.get('stn'));
 	if(urlParams.has('stn')) {
-		setCookie('userstation',urlParams.get('stn'),1);
+		var urlStn = decodeURIComponent(urlParams.get('stn'));
+		setCookie('userstation',urlStn,1);
+		var tz = getTimezone(urlStn);
+		//		console.lol(tz);
+		if(tz.length > 0) {
+			setCookie('usertimezone',tz,1);
+//			document.getElementById("timezone").value = tz;
+		}
 		window.location.search = '';
 	}
 	document.getElementById("favourites").innerHTML = "Favourite stations: " + getFavs();
@@ -95,7 +100,7 @@
 		return stationHTML;
 	}
 	function getTimezone(stationName) {
-		var url3 = "https://viarail.live/get_stn_tz.php?stn=" + stationName;
+		var url3 = "https://viarail.live/get_stn_tz.php?stn=" + encodeURIComponent(stationName);
 //		console.log(url3);
 		var xtz = new XMLHttpRequest();
 		xtz.onreadystatechange = function() {
@@ -140,7 +145,7 @@
 	  if((['America/Toronto','America/Halifax','America/Winnipeg','America/Regina','America/Edmonton','America/Vancouver'].includes(timezone)) == false) {
 		  timezone = 'America/Toronto';
 	  }
-	  console.log(timezone);
+//	  console.log(timezone);
 	  var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: timezone, hour12: false };
 	  var userStation = getCookie('userstation');
 //	  console.log(userStation);
@@ -155,7 +160,7 @@
 	  }
 //	  console.log(station)
 	  document.getElementById("stationTitle").innerHTML = station;
-	  document.title = "VIA Rail Arrivals/Departures Board - " + station;
+	  document.title = station + " - VIA Rail Arrivals/Departures Board";
 	  for (i = 0; i <x.length; i++) {
 		  if(stations.includes(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue) === false) {
 			stations.push(x[i].getElementsByTagName("Station")[0].childNodes[0].nodeValue);
@@ -165,6 +170,7 @@
 			&& (x[i].getElementsByTagName("ScheduledArrival")[0].childNodes.length > 0) ) {
 			if(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes.length > 0) {
 				var estArr = new Date(x[i].getElementsByTagName("EstimatedArrival")[0].childNodes[0].nodeValue.replace(' ', 'T'));
+				var rawEstArr = estArr;
 				estArr = estArr.toLocaleString('en-CA', options);
 			} else {
 				var estArr = "N/A";
@@ -177,6 +183,9 @@
 				var actArr = "N/A";
 			}
 
+//			console.log(rawEstArr.getTime());
+//			console.log(schedArr.getTime());
+//			console.log(rawEstArr.getTime() - schedArr.getTime());
 			table += "<tr><td>" +
 			x[i].getElementsByTagName("Train")[0].childNodes[0].nodeValue +
 			"</td><td>" +
@@ -298,6 +307,7 @@
 	    if (days) {
 	        var date = new Date();
 	        date.setTime(date.getTime() + (days*24*60*60*1000));
+//		    console.log(date);
 	        expires = "; expires=" + date.toUTCString();
 	    }
 	    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
@@ -317,26 +327,38 @@
 	}
 	function addFav(name) {
 		var favs = getCookie('favs');
-		favs = favs + "," + name;
+		if(favs == null || favs == 'null') {
+		      favs = name;
+		} else {
+			favs = favs + "," + name;
+		}
 		setCookie('favs', favs, 365);
 		document.getElementById("favourites").innerHTML = "Favourite stations: " + getFavs();
 	}
 	function getFavs() {
-		var favs = getCookie('favs').split(',');
-		var output = "";
-		favs.forEach(function(fav) {
-			if(fav != null && fav != 'null' && fav.length > 0) {
-				output += '<a href="https://viarail.live/?stn=' + fav + '">' + fav + '</a>, ';
-			}
-		});
-		return output;
+		var favs = getCookie('favs');
+		if(favs != null && favs.length > 0) {
+			favs = favs.split(',');
+			var output = "";
+			favs.forEach(function(fav) {
+				if(fav != null && fav != 'null' && fav.length > 0) {
+					fav_enc = encodeURIComponent(fav);
+					output += '<a href="https://viarail.live/?stn=' + fav_enc + '">' + fav + '</a>, ';
+				}
+			});
+			return output;
+		}
 	}
 	function delFav(name) {
 		var favs = getCookie('favs').split(',');
 		var newFavs = "";
 		favs.forEach(function(fav) {
 			if(fav != name) {
-				newFavs += "," + fav;
+				if(newFavs == "") {
+					newFavs = fav;
+				} else {
+					newFavs += "," + fav;
+				}
 			}
 		});
 		setCookie('favs', newFavs, 365);

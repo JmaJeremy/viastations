@@ -66,3 +66,14 @@ button.reload {
     font-weight: bold;
     font-size: large;
 }
+span.favbutton {
+    margin: 1em;
+}
+div#bookmarks {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightyellow;
+}
+div#favbuttons {
+    margin-bottom: 1em;
+}
