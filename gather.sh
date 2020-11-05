@@ -17,6 +17,8 @@ for i in ${LINKS[@]}; do
 	wget -O /var/www/html/viastation/archive/$timestamp/$filename $i
 done
 
+nl -s "," /var/www/html/viastation/archive/$timestamp/vehiculesLookup.csv > /var/www/html/viastation/archive/$timestamp/vehiculesLookup_nl.csv
+
 rm /var/www/html/viastation/archive/latest
 ln -s /var/www/html/viastation/archive/$timestamp /var/www/html/viastation/archive/latest
 
