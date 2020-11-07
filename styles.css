@@ -77,3 +77,9 @@ div#bookmarks {
 div#favbuttons {
     margin-bottom: 1em;
 }
+#consistlink {
+    width: 75px;
+    padding: 15px;
+    border: 5px solid black;
+    background-color: lightgray;
+}

@@ -105,7 +105,7 @@ foreach($trains as $train) {
 	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</abbr></td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['Date'] . "</td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</abbr></td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
 	foreach($train['carNums']['hits']['hits'] as $car) {
 		echo $car['_source']['CarNum'] . ", ";
