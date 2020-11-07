@@ -1,0 +1,115 @@
+<?php
+require 'vendor/autoload.php';
+?>
+<html>
+<head>
+<!--
+<?php
+
+$defaultHandler = Elasticsearch\ClientBuilder::defaultHandler();
+$client = Elasticsearch\ClientBuilder::create()
+		->setHandler($defaultHandler)
+		->setElasticCloudId('viarail-data:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ4MjJhY2YxNDk0ODc0ZGQwODM0Nzg0ZTIzNmE5MDFhOSQ3MDk3ODYzNjdhZDI0ZjU2YjZlMmM5ZWM0ZDcxYjdkMw==')
+		->setApiKey('dsHIoHUBPF3H5HasLwVl', 'AeT4sa0WQn6_ryKK0JVf_g')
+		->build();
+
+$params = [
+	'index' => 'via-consist-*',
+	'body' => [
+		'query' => [
+			'range' => [
+				'sequence_time' => [
+					'gte' => 'now-6h'
+				]
+			]
+		],
+		'size' => 0,
+		'aggs' => [
+			'trainNums' => [
+				'terms' => [ 
+					'field' => 'Train', 
+					'size' => 100,
+					'order' => [ '_key' => 'asc' ]
+				],
+				'aggs' => [
+					'carNums' => [
+						'top_hits' => [
+							'sort' => [ [ 'SeqNum' => [ 'order' => 'asc' ] ] ],
+							'_source' => [ 'includes' => [ 'CarNum', 'SeqNum', 'Date', 'From', 'FromTime', 'To', 'ToTime', 'sequence_time' ] ],
+							'size' => 100
+						]
+					]
+				]
+			]
+		]
+	]
+];
+
+$countParams['index'] = 'via-consist-*';
+$results = $client->count($countParams);
+
+print_r($results);
+
+$results = $client->search($params);
+print_r($results);
+
+?>
+
+-->
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+</style>
+
+	<title>VIA Rail Consists</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<meta property="og:url"		content="https://viarail.live/consist" />
+	<meta property="og:type"		content="website" />
+	<meta property="og:title"		content="VIA Rail Consists" />
+	<meta property="og:description"		content="Live locomotive and passenger car consist details for VIA Rail trains in Canada" />
+	<meta property="og:image"		content="https://viastation-assets.s3.amazonaws.com/depboard.jpg" />
+	<meta property="og:image:width"		content="600" />
+	<meta property="og:image:height"		content="450" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<h1>VIA Rail Consists</h1>
+<h2>Trains which have reported within last 12 hours</h2>
+<h3>All times displayed in local time of departure/destination station respectively</h3>
+<table>
+<tr>
+<th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
+</tr>
+<?php
+$trains = $results['aggregations']['trainNums']['buckets'];
+foreach($trains as $train) {
+	echo "<tr>";
+	echo "<td>" . $train['key'] . "</td>";
+	echo "<td>" . $train['doc_count'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['Date'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
+	foreach($train['carNums']['hits']['hits'] as $car) {
+		echo $car['_source']['CarNum'] . ", ";
+	}
+	echo "</td></tr>";
+}
+
+$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+$mutable = DateTime::createFromImmutable($date);
+
+?>
+</table>
+
+	<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
+
+</body>
+</html>
