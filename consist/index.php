@@ -1,5 +1,15 @@
 <?php
 require 'vendor/autoload.php';
+
+function get_station_from_abbr($station) {
+	$db = new SQLite3('../stations.db');
+	$stm = $db->prepare('SELECT name FROM stations WHERE code = :stn');
+	$stm->bindvalue(':stn', $station);
+	$res = $stm->execute();
+
+	$row = $res->fetchArray();
+	return $row[0];
+}
 ?>
 <html>
 <head>
@@ -92,10 +102,10 @@ foreach($trains as $train) {
 	echo "<tr>";
 	echo "<td>" . $train['key'] . "</td>";
 	echo "<td>" . $train['doc_count'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</abbr></td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['Date'] . "</td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
 	foreach($train['carNums']['hits']['hits'] as $car) {
 		echo $car['_source']['CarNum'] . ", ";
