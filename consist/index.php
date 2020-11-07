@@ -5,12 +5,12 @@ require 'vendor/autoload.php';
 <head>
 <!--
 <?php
-
+$secret = trim(file_get_contents('/var/www/elasticapi.secret'));
 $defaultHandler = Elasticsearch\ClientBuilder::defaultHandler();
 $client = Elasticsearch\ClientBuilder::create()
 		->setHandler($defaultHandler)
 		->setElasticCloudId('viarail-data:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ4MjJhY2YxNDk0ODc0ZGQwODM0Nzg0ZTIzNmE5MDFhOSQ3MDk3ODYzNjdhZDI0ZjU2YjZlMmM5ZWM0ZDcxYjdkMw==')
-		->setApiKey('dsHIoHUBPF3H5HasLwVl', 'AeT4sa0WQn6_ryKK0JVf_g')
+		->setApiKey('v8NGoXUBPF3H5Has5s7B', $secret)
 		->build();
 
 $params = [
