@@ -29,7 +29,7 @@ $params = [
 		'query' => [
 			'range' => [
 				'sequence_time' => [
-					'gte' => 'now-6h'
+					'gte' => 'now-1h'
 				]
 			]
 		],
@@ -90,8 +90,9 @@ table, th, td {
 </head>
 <body>
 <h1>VIA Rail Consists</h1>
-<h2>Trains which have reported within last 12 hours</h2>
+<h2>Trains which have reported within last 6 hours</h2>
 <h3>All times displayed in local time of departure/destination station respectively</h3>
+<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
 <table>
 <tr>
 <th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
@@ -107,8 +108,14 @@ foreach($trains as $train) {
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
 	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</abbr></td>";
 	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
-	foreach($train['carNums']['hits']['hits'] as $car) {
-		echo $car['_source']['CarNum'] . ", ";
+	$last_key = end(array_keys($train['carNums']['hits']['hits']));
+	foreach($train['carNums']['hits']['hits'] as $key=>$car) {
+		if($car['_source']['Date'] == $train['carNums']['hits']['hits'][1]['_source']['Date']) {
+			echo $car['_source']['CarNum'];
+			if($key != $last_key) {
+				echo ", ";
+			}
+		}
 	}
 	echo "</td></tr>";
 }
