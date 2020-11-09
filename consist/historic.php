@@ -23,13 +23,26 @@ $client = Elasticsearch\ClientBuilder::create()
 		->setApiKey('v8NGoXUBPF3H5Has5s7B', $secret)
 		->build();
 
+$date = date('Y/m/d', time()-86400);
+if(isset($_GET['date'])) {
+	if(!empty($_GET['date']) && preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $_GET['date']) == 1) {
+		$date = str_replace('-', '/', $_GET['date']);
+	}
+}
+
 $params = [
 	'index' => 'via-consist-*',
 	'body' => [
 		'query' => [
-			'range' => [
-				'sequence_time' => [
-					'gte' => 'now-1h'
+//			'range' => [
+//				'sequence_time' => [
+//					'gte' => 'now-1d/d',
+//					'lte' => 'now-1d/d'
+//				]
+//			]
+			'term' => [
+				'Date' => [
+					'value' => $date
 				]
 			]
 		],
@@ -66,7 +79,7 @@ print_r($results);
 ?>
 
 -->
- <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 	<title>VIA Rail Consists</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
@@ -84,10 +97,20 @@ print_r($results);
 </head>
 <body>
 <h1>VIA Rail Consists</h1>
-<h2>Trains which have reported within last 6 hours</h2>
+<h2><span class="historiclink">Historic</span> Data</h2>
 <h3>All times displayed in local time of departure/destination station respectively</h3>
 <h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
-<h3><a href="/consist/historic.php">Click here</a> to view <b class="historiclink">historic</b> data</h3>
+<h3><a href="/consist/">Click here</a> to return to <b>recent</b> data</h3>
+<div>
+Showing data for date: <?php echo $date; ?>
+</div>
+<div>
+<form action="" method="get">
+<label for="date">Date: </label>
+<input type="date" id="date" name="date" />
+<input type="submit" id="submit" name="submit" value="Submit" />
+</form>
+</div>
 <table>
 <tr>
 <th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
@@ -95,23 +118,28 @@ print_r($results);
 <?php
 $trains = $results['aggregations']['trainNums']['buckets'];
 foreach($trains as $train) {
-	echo "<tr>";
-	echo "<td>" . $train['key'] . "</td>";
-	echo "<td>" . $train['doc_count'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['Date'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
 	$last_key = end(array_keys($train['carNums']['hits']['hits']));
+	$carNums = "";
+	$total = 0;
 	foreach($train['carNums']['hits']['hits'] as $key=>$car) {
-		if($car['_source']['Date'] == $train['carNums']['hits']['hits'][1]['_source']['Date']) {
-			echo $car['_source']['CarNum'];
+		if($car['_source']['sequence_time'] == $train['carNums']['hits']['hits'][0]['_source']['sequence_time']) {
+			$carNums .= $car['_source']['CarNum'];
+			$total++;
 			if($key != $last_key) {
-				echo ", ";
+				$carNums .= ", ";
 			}
 		}
 	}
+	echo "<tr>";
+	echo "<td>" . $train['key'] . "</td>";
+//	echo "<td>" . $train['doc_count'] . "</td>";
+	echo "<td>" . $total . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+	echo $carNums;
 	echo "</td></tr>";
 }
 
