@@ -29,7 +29,7 @@ $params = [
 		'query' => [
 			'range' => [
 				'sequence_time' => [
-					'gte' => 'now-1h'
+					'gte' => 'now-30m'
 				]
 			]
 		],
@@ -94,18 +94,23 @@ print_r($results);
 </tr>
 <?php
 $trains = $results['aggregations']['trainNums']['buckets'];
+$today = date('Y/m/d', strtotime('-5 days'));
+//echo $today;
 foreach($trains as $train) {
+	if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
+		continue;
+	}
 	echo "<tr>";
 	echo "<td>" . $train['key'] . "</td>";
 	echo "<td>" . $train['doc_count'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['From'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['Date'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['FromTime'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][1]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][1]['_source']['To'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][1]['_source']['ToTime'] . "</td><td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
 	$last_key = end(array_keys($train['carNums']['hits']['hits']));
 	foreach($train['carNums']['hits']['hits'] as $key=>$car) {
-		if($car['_source']['Date'] == $train['carNums']['hits']['hits'][1]['_source']['Date']) {
+		if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
 			echo $car['_source']['CarNum'];
 			if($key != $last_key) {
 				echo ", ";

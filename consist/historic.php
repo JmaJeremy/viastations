@@ -107,7 +107,7 @@ Showing data for date: <?php echo $date; ?>
 <div>
 <form action="" method="get">
 <label for="date">Date: </label>
-<input type="date" id="date" name="date" />
+<input type="date" id="date" name="date"<?php if(isset($_GET['date'])) { echo " value=\"${_GET['date']}\""; } ?> />
 <input type="submit" id="submit" name="submit" value="Submit" />
 </form>
 </div>
