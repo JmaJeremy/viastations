@@ -102,7 +102,7 @@ print_r($results);
 		<h2><span class="historiclink">Historic</span> Data</h2>
 		<h3>All times displayed in local time of departure/destination station respectively</h3>
 		<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
-		<h3><a href="/consist/">Click here</a> to return to <b>recent</b> data</h3>
+		<h3><a href="/consist/">Click here</a> to return to <b>today's</b> departures</h3>
 	</div>
 	<div>
 	Showing data for date: <?php echo $date; ?>
