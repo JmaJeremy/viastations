@@ -96,60 +96,65 @@ print_r($results);
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<h1>VIA Rail Consists</h1>
-<h2><span class="historiclink">Historic</span> Data</h2>
-<h3>All times displayed in local time of departure/destination station respectively</h3>
-<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
-<h3><a href="/consist/">Click here</a> to return to <b>recent</b> data</h3>
-<div>
-Showing data for date: <?php echo $date; ?>
-</div>
-<div>
-<form action="" method="get">
-<label for="date">Date: </label>
-<input type="date" id="date" name="date"<?php if(isset($_GET['date'])) { echo " value=\"${_GET['date']}\""; } ?> />
-<input type="submit" id="submit" name="submit" value="Submit" />
-</form>
-</div>
-<table>
-<tr>
-<th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
-</tr>
-<?php
-$trains = $results['aggregations']['trainNums']['buckets'];
-foreach($trains as $train) {
-	$last_key = end(array_keys($train['carNums']['hits']['hits']));
-	$carNums = "";
-	$total = 0;
-	foreach($train['carNums']['hits']['hits'] as $key=>$car) {
-		if($car['_source']['sequence_time'] == $train['carNums']['hits']['hits'][0]['_source']['sequence_time']) {
-			$carNums .= $car['_source']['CarNum'];
-			$total++;
-			if($key != $last_key) {
-				$carNums .= ", ";
+<div class="container">
+	<div class="header">
+		<h1>VIA Rail Consists</h1>
+		<h2><span class="historiclink">Historic</span> Data</h2>
+		<h3>All times displayed in local time of departure/destination station respectively</h3>
+		<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
+		<h3><a href="/consist/">Click here</a> to return to <b>recent</b> data</h3>
+	</div>
+	<div>
+	Showing data for date: <?php echo $date; ?>
+	</div>
+	<div>
+	<form action="" method="get">
+	<label for="date">Departure Date: </label>
+	<input type="date" id="date" name="date"<?php if(isset($_GET['date'])) { echo " value=\"${_GET['date']}\""; } ?> />
+	<input type="submit" id="submit" name="submit" value="Submit" />
+	</form>
+	</div>
+	<table>
+	<tr>
+	<th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
+	</tr>
+	<?php
+	$trains = $results['aggregations']['trainNums']['buckets'];
+	foreach($trains as $train) {
+		$last_key = end(array_keys($train['carNums']['hits']['hits']));
+		$carNums = "";
+		$total = 0;
+		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
+			if($car['_source']['sequence_time'] == $train['carNums']['hits']['hits'][0]['_source']['sequence_time']) {
+				$carNums .= $car['_source']['CarNum'];
+				$total++;
+				if($key != $last_key) {
+					$carNums .= ", ";
+				}
 			}
 		}
+		echo "<tr>";
+		echo "<td>" . $train['key'] . "</td>";
+	//	echo "<td>" . $train['doc_count'] . "</td>";
+		echo "<td>" . $total . "</td>";
+		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+		echo $carNums;
+		echo "</td></tr>";
 	}
-	echo "<tr>";
-	echo "<td>" . $train['key'] . "</td>";
-//	echo "<td>" . $train['doc_count'] . "</td>";
-	echo "<td>" . $total . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
-	echo $carNums;
-	echo "</td></tr>";
-}
 
-$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
-$mutable = DateTime::createFromImmutable($date);
+	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+	$mutable = DateTime::createFromImmutable($date);
 
-?>
-</table>
+	?>
+	</table>
 
-	<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
+		<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
 
+		<?php include("footer.php"); ?>
+</div>
 </body>
 </html>

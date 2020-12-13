@@ -83,50 +83,55 @@ print_r($results);
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<h1>VIA Rail Consists</h1>
-<h2>Trains which have reported within last 6 hours</h2>
-<h3>All times displayed in local time of departure/destination station respectively</h3>
-<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
-<h3><a href="/consist/historic.php">Click here</a> to view <b class="historiclink">historic</b> data</h3>
-<table>
-<tr>
-<th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
-</tr>
-<?php
-$trains = $results['aggregations']['trainNums']['buckets'];
-$today = date('Y/m/d', strtotime('-5 days'));
-//echo $today;
-foreach($trains as $train) {
-	if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
-		continue;
-	}
-	echo "<tr>";
-	echo "<td>" . $train['key'] . "</td>";
-	echo "<td>" . $train['doc_count'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
-	echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
-	echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
-	$last_key = end(array_keys($train['carNums']['hits']['hits']));
-	foreach($train['carNums']['hits']['hits'] as $key=>$car) {
-		if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
-			echo $car['_source']['CarNum'];
-			if($key != $last_key) {
-				echo ", ";
+<div class="container">
+	<div class="header">
+		<h1>VIA Rail Consists</h1>
+		<h2>Today's Departures</h2>
+		<h3>All times displayed in local time of departure/destination station respectively</h3>
+		<h3><a href="/">Click here</a> to view arrival/departure times at any station</h3>
+		<h3><a href="/consist/historic.php">Click here</a> to view <b class="historiclink">historic</b> data (from September 2019 to Yesterday)</h3>
+	</div>
+	<table>
+	<tr>
+	<th>Train #</th><th>Total cars</th><th>Dep. Stn.</th><th>Dep. Date</th><th>Dep. Time</th><th>Dest. Stn.</th><th>Dest. Time</th><th>Consist</th>
+	</tr>
+	<?php
+	$trains = $results['aggregations']['trainNums']['buckets'];
+	$today = date('Y/m/d', strtotime('-5 days'));
+	//echo $today;
+	foreach($trains as $train) {
+		if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
+			continue;
+		}
+		echo "<tr>";
+		echo "<td>" . $train['key'] . "</td>";
+		echo "<td>" . $train['doc_count'] . "</td>";
+		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+		$last_key = end(array_keys($train['carNums']['hits']['hits']));
+		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
+			if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
+				echo $car['_source']['CarNum'];
+				if($key != $last_key) {
+					echo ", ";
+				}
 			}
 		}
+		echo "</td></tr>";
 	}
-	echo "</td></tr>";
-}
 
-$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
-$mutable = DateTime::createFromImmutable($date);
+	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+	$mutable = DateTime::createFromImmutable($date);
 
-?>
-</table>
+	?>
+	</table>
 
-	<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
+		<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
 
+		<?php include("footer.php"); ?>
+</div>
 </body>
 </html>
