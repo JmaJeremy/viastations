@@ -36,17 +36,27 @@ $params = [
 		'query' => [
 //			'range' => [
 //				'sequence_time' => [
-//					'gte' => 'now-1d/d',
-//					'lte' => 'now-1d/d'
+//					'gte' => $_GET['date'],
+//					'lte' => $_GET['date']
 //				]
 //			]
-			'term' => [
-				'Date' => [
-					'value' => $date
+			'bool' => [
+				'should' => [[
+					'range' => [
+						'Date' => [
+							'gte' => $date,
+							'lte' => $date
+						]
+					]],[
+					'term' => [
+						'Date.keyword' => [
+							'value' => $date
+						]
+					]
 				]
-			]
+			]]
 		],
-		'size' => 0,
+		'size' => 10,
 		'aggs' => [
 			'trainNums' => [
 				'terms' => [ 
@@ -133,17 +143,19 @@ print_r($results);
 				}
 			}
 		}
-		echo "<tr>";
-		echo "<td>" . $train['key'] . "</td>";
-	//	echo "<td>" . $train['doc_count'] . "</td>";
-		echo "<td>" . $total . "</td>";
-		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
-		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
-		echo $carNums;
-		echo "</td></tr>";
+		if($total > 1 || $train['key'] == '290' || $train['key'] == '291') {
+			echo "<tr>";
+			echo "<td>" . $train['key'] . "</td>";
+		//	echo "<td>" . $train['doc_count'] . "</td>";
+			echo "<td>" . $total . "</td>";
+			echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+			echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+			echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+			echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+			echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+			echo $carNums;
+			echo "</td></tr>";
+		}
 	}
 
 	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
