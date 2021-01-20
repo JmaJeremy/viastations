@@ -70,7 +70,7 @@ $results = $client->count($countParams);
 print_r($results);
 
 $results = $client->search($params);
-print_r($results);
+//print_r($results);
 
 ?>
 
@@ -121,7 +121,7 @@ print_r($results);
 		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
 		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
 		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
-		$last_key = end(array_keys($train['carNums']['hits']['hits']));
+//		$last_key = end(array_keys($train['carNums']['hits']['hits']));
 		$carCount = 0;
 		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
 			if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
