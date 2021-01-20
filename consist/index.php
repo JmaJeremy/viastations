@@ -138,7 +138,7 @@ $results = $client->search($params);
 		echo str_replace('%CARCOUNT%', $carCount, $output);
 	}
 
-	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][1]['carNums']['hits']['hits'][0]['_source']['sequence_time']);
 	$mutable = DateTime::createFromImmutable($date);
 
 	?>
