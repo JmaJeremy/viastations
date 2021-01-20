@@ -25,7 +25,7 @@ $client = Elasticsearch\ClientBuilder::create()
 
 
 $date = date('Y/m/d', time());
-$date_y = date('Y/m/d', time()-86400);
+$date_y = date('Y/m/d', time()-82800); 	// t-23 hours
 $date_dash = date('Y-m-d', time());
 echo 'Date: ' . $date;
 $params = [
@@ -106,7 +106,7 @@ print_r($results);
 	</tr>
 	<?php
 	$trains = $results['aggregations']['trainNums']['buckets'];
-	$today = date('Y/m/d', strtotime('-5 days'));
+	$today = date('Y/m/d', strtotime('-1 days'));
 	//echo $today;
 	foreach($trains as $train) {
 		if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
@@ -127,12 +127,14 @@ print_r($results);
 			if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
 				$output .= $car['_source']['CarNum'];
 				$carCount++;
-				if($key != $last_key) {
+//				if($key != $last_key) {
 					$output .= ", ";
-				}
+//				}
 			}
 		}
+		$output .= '%END%';
 		$output .= "</td></tr>";
+		$output = str_replace(', %END%', '', $output);
 		echo str_replace('%CARCOUNT%', $carCount, $output);
 	}
 
