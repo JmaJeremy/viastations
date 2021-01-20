@@ -23,15 +23,24 @@ $client = Elasticsearch\ClientBuilder::create()
 		->setApiKey('v8NGoXUBPF3H5Has5s7B', $secret)
 		->build();
 
+
+$date = date('Y/m/d', time());
+$date_y = date('Y/m/d', time()-86400);
+$date_dash = date('Y-m-d', time());
+echo 'Date: ' . $date;
 $params = [
 	'index' => 'via-consist-*',
 	'body' => [
 		'query' => [
-			'range' => [
-				'sequence_time' => [
-					'gte' => 'now-30m'
-				]
-			]
+			'bool' => [
+				'must' => [[
+					'range' => [
+						'Date' => [
+							'gte' => $date_y,
+							'format' => 'yyyy/MM/dd'
+						]
+					]]
+			]]
 		],
 		'size' => 0,
 		'aggs' => [
@@ -103,24 +112,28 @@ print_r($results);
 		if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
 			continue;
 		}
-		echo "<tr>";
-		echo "<td>" . $train['key'] . "</td>";
-		echo "<td>" . $train['doc_count'] . "</td>";
-		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
-		echo "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
-		echo "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+		$output = "";
+		$output .= "<tr>";
+		$output .= "<td>" . $train['key'] . "</td>";
+		$output .= "<td>%CARCOUNT%</td>";
+		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
 		$last_key = end(array_keys($train['carNums']['hits']['hits']));
+		$carCount = 0;
 		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
 			if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
-				echo $car['_source']['CarNum'];
+				$output .= $car['_source']['CarNum'];
+				$carCount++;
 				if($key != $last_key) {
-					echo ", ";
+					$output .= ", ";
 				}
 			}
 		}
-		echo "</td></tr>";
+		$output .= "</td></tr>";
+		echo str_replace('%CARCOUNT%', $carCount, $output);
 	}
 
 	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
