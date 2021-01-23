@@ -13,6 +13,15 @@ function get_station_from_abbr($station) {
 ?>
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNJXXCX7M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNJXXCX7M6');
+</script>
 <!--
 <?php
 $secret = trim(file_get_contents('/var/www/elasticapi.secret'));

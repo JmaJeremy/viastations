@@ -17,6 +17,15 @@ function get_station_from_abbr($station) {
 ?>
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNJXXCX7M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNJXXCX7M6');
+</script>
 <!--
 <?php
 $secret = trim(file_get_contents('/var/www/elasticapi.secret'));
@@ -238,13 +247,13 @@ $results = $client->search($params);
 	}
 	*/
 
-	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][1]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
-	$mutable = DateTime::createFromImmutable($date);
+//	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][1]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+//	$mutable = DateTime::createFromImmutable($date);
 
 	?>
 	</table>
 
-		<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p>
+<?php /*		<p><b>Latest update:</b> <?php echo $mutable->format('Y-m-d, H:i:s')  ?> UTC</p> */ ?>
 
 		<?php include("footer.php"); ?>
 </div>
