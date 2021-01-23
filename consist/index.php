@@ -27,9 +27,11 @@ $client = Elasticsearch\ClientBuilder::create()
 $date = date('Y/m/d', time());
 $date_y = date('Y/m/d', time()-82800); 	// t-23 hours
 $date_dash = date('Y-m-d', time());
+$index = 'via-consist-' . date('Y.m.d', time()) . ',via-consist-' . date('Y.m.d', time()-82800);
 echo 'Date: ' . $date;
 $params = [
-	'index' => 'via-consist-*',
+	'index' => $index,
+	'ignore_unavailable' => true,
 	'body' => [
 		'query' => [
 			'bool' => [
@@ -47,7 +49,7 @@ $params = [
 			'trainNums' => [
 				'terms' => [ 
 					'field' => 'Train', 
-					'size' => 100,
+					'size' => 500,
 					'order' => [ '_key' => 'asc' ]
 				],
 				'aggs' => [
@@ -113,7 +115,7 @@ $results = $client->search($params);
 			continue;
 		}
 		$output = "";
-		$output .= "<tr>";
+		$output .= "<tr>\n";
 		$output .= "<td>" . $train['key'] . "</td>";
 		$output .= "<td>%CARCOUNT%</td>";
 		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
@@ -124,7 +126,7 @@ $results = $client->search($params);
 //		$last_key = end(array_keys($train['carNums']['hits']['hits']));
 		$carCount = 0;
 		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
-			if($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) {
+			if(($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) && (strpos($output, $car['_source']['CarNum']) === FALSE)) {
 				$output .= $car['_source']['CarNum'];
 				$carCount++;
 //				if($key != $last_key) {
@@ -133,7 +135,7 @@ $results = $client->search($params);
 			}
 		}
 		$output .= '%END%';
-		$output .= "</td></tr>";
+		$output .= "</td>\n</tr>\n";
 		$output = str_replace(', %END%', '', $output);
 		echo str_replace('%CARCOUNT%', $carCount, $output);
 	}

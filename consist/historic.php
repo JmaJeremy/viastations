@@ -8,6 +8,10 @@ function get_station_from_abbr($station) {
 	$res = $stm->execute();
 
 	$row = $res->fetchArray();
+	if(gettype($row) != "array") {
+		error_log("Missing station: $station");
+		return "";
+	}
 	return $row[0];
 }
 ?>
@@ -30,6 +34,49 @@ if(isset($_GET['date'])) {
 	}
 }
 
+$date_obj = strtotime($date);
+$date_y = date('Y/m/d', $date_obj-82800); 	// t-23 hours
+$date_dash = date('Y-m-d', $date_obj);
+$index = 'via-consist-' . date('Y.m.d', $date_obj) . ',via-consist-' . date('Y.m.d', $date_obj-82800);
+echo $index;
+$params = [
+	'index' => $index,
+	'ignore_unavailable' => true,
+	'body' => [
+		'query' => [
+			'bool' => [
+				'must' => [[
+					'range' => [
+						'Date' => [
+							'gte' => $date,
+							'lte' => $date,
+							'format' => 'yyyy/MM/dd'
+						]
+					]]
+			]]
+		],
+		'size' => 0,
+		'aggs' => [
+			'trainNums' => [
+				'terms' => [ 
+					'field' => 'Train', 
+					'size' => 500,
+					'order' => [ '_key' => 'asc' ]
+				],
+				'aggs' => [
+					'carNums' => [
+						'top_hits' => [
+							'sort' => [ [ 'SeqNum' => [ 'order' => 'asc' ] ] ],
+							'_source' => [ 'includes' => [ 'CarNum', 'SeqNum', 'Date', 'From', 'FromTime', 'To', 'ToTime', 'sequence_time' ] ],
+							'size' => 100
+						]
+					]
+				]
+			]
+		]
+	]
+];
+/*
 $params = [
 	'index' => 'via-consist-*',
 	'body' => [
@@ -77,14 +124,14 @@ $params = [
 		]
 	]
 ];
-
+*/
 $countParams['index'] = 'via-consist-*';
 $results = $client->count($countParams);
 
 print_r($results);
 
 $results = $client->search($params);
-print_r($results);
+//print_r($results);
 
 ?>
 
@@ -130,6 +177,38 @@ print_r($results);
 	</tr>
 	<?php
 	$trains = $results['aggregations']['trainNums']['buckets'];
+	$today = $date;
+	foreach($trains as $train) {
+		if($train['carNums']['hits']['hits'][0]['_source']['Date'] < $today) {
+			continue;
+		}
+		$output = "";
+		$output .= "<tr>\n";
+		$output .= "<td>" . $train['key'] . "</td>";
+		$output .= "<td>%CARCOUNT%</td>";
+		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['From']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['From'] . "</abbr></td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['Date'] . "</td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['FromTime'] . "</td>";
+		$output .= "<td><abbr title=\"" . get_station_from_abbr($train['carNums']['hits']['hits'][0]['_source']['To']) . "\">" . $train['carNums']['hits']['hits'][0]['_source']['To'] . "</abbr></td>";
+		$output .= "<td>" . $train['carNums']['hits']['hits'][0]['_source']['ToTime'] . "</td><td>";
+//		$last_key = end(array_keys($train['carNums']['hits']['hits']));
+		$carCount = 0;
+		foreach($train['carNums']['hits']['hits'] as $key=>$car) {
+			if(!array_key_exists('CarNum', $car['_source'])) continue;
+			if(($car['_source']['Date'] == $train['carNums']['hits']['hits'][0]['_source']['Date']) && (strpos($output, $car['_source']['CarNum']) === FALSE)) {
+				$output .= $car['_source']['CarNum'];
+				$carCount++;
+//				if($key != $last_key) {
+					$output .= ", ";
+//				}
+			}
+		}
+		$output .= '%END%';
+		$output .= "</td>\n</tr>\n";
+		$output = str_replace(', %END%', '', $output);
+		echo str_replace('%CARCOUNT%', $carCount, $output);
+	}
+	/*
 	foreach($trains as $train) {
 		$last_key = end(array_keys($train['carNums']['hits']['hits']));
 		$carNums = "";
@@ -157,8 +236,9 @@ print_r($results);
 			echo "</td></tr>";
 		}
 	}
+	*/
 
-	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][0]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
+	$date = new DateTimeImmutable($results['aggregations']['trainNums']['buckets'][1]['carNums']['hits']['hits'][1]['_source']['sequence_time']);
 	$mutable = DateTime::createFromImmutable($date);
 
 	?>
