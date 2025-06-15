@@ -1,3 +1,5 @@
+**I have abandoned this project since VIA changed their website and I no longer have access to the required data.**
+
 Hosted at <https://viarail.live/>
 
 This app leverages open data from VIA Rail to display information about arrivals and departures at particular stations as well as information about train consists.
